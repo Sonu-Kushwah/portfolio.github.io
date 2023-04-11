@@ -1,0 +1,44 @@
+@media (min-width: 1400px) and (max-width: 1550px) {
+    
+}
+
+@media (max-width: 1450px) { 
+}
+
+
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1375px) {
+
+}
+
+@media (max-width: 991px) {
+    .top_list {
+        float: right !important;
+    }
+}
+
+
+@media (max-width: 767px) {
+   
+}
+
+
+@media (max-width: 480px) {
+    .nav-tabs .nav-link {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .section_title h2 {
+        font-size: 25px;
+    }
+    .feature_content h4 {
+        font-size: 20px;
+    }    
+    .feature_content h4 {
+        font-size: 22px;
+    }    
+}
+
+
