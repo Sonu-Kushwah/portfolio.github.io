@@ -120,6 +120,9 @@ iframe {
   position: relative;
   z-index: 1;
 }
+.AnimatedBt svg{
+  color: #212529;
+}
 .AnimatedBtn:hover {
   color: var(--white);
 }

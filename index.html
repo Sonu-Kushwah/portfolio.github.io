@@ -162,7 +162,18 @@
                         </p>
                         <div class="">
                           <!-- <button href="cv.pdf" download="your-file.pdf" class="AnimatedBtn">ddfdf</button> -->
-                          <a href="cv.pdf" download="your-file.pdf" target="_blank" class="AnimatedBtn mt-3">Download CV</a>
+                          <a href="cv.pdf" download="your-file.pdf" target="_blank" class="AnimatedBtn mt-3">Download CV <svg class="expo-arrow2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <g clip-path="url(#clip0_158_583)">
+                                <path d="M5.33337 22.6667V25.3333C5.33337 26.0406 5.61433 26.7189 6.11442 27.219C6.61452 27.7191 7.2928 28 8.00004 28H24C24.7073 28 25.3856 27.7191 25.8857 27.219C26.3858 26.7189 26.6667 26.0406 26.6667 25.3333V22.6667" stroke="#FFDB59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9.33337 14.6667L16 21.3333L22.6667 14.6667" stroke="#FFDB59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 5.33333V21.3333" stroke="#FFDB59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_158_583">
+                                    <rect width="32" height="32" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg></a>
                         </div>
                      </div>
                   </div>
@@ -258,7 +269,7 @@
                         <i class="fa-brands fa-servicestack"></i>
                      </div>
                      <div class="feature_content">
-                        <h4><a href="#">PDF Teplate Design</a></h4>
+                        <h4><a href="#">PDF Template Design</a></h4>
                         <p>
                            I throw myself down among the tall grass by the stream as Ilie
                            close to the earth.
@@ -814,39 +825,34 @@
                </div>
                <div class="col-lg-7 col-md-6 mb-lg-0 mb-4">
                 <div class="contact_details">
-                  <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                  <form method="post" action="send_email.php" data-aos="fade-up" data-aos-delay="200">
                     <div class="row gy-4">
-      
                       <div class="col-md-6">
                         <label for="name-field" class="pb-2">Your Name</label>
-                        <input type="text" name="name" id="name-field" class="form-control" required="">
+                        <input type="text" name="name" id="name-field" class="form-control" required>
                       </div>
-      
+                  
                       <div class="col-md-6">
                         <label for="email-field" class="pb-2">Your Email</label>
-                        <input type="email" class="form-control" name="email" id="email-field" required="">
+                        <input type="email" class="form-control" name="email" id="email-field" required>
                       </div>
-      
+                  
                       <div class="col-md-12">
                         <label for="subject-field" class="pb-2">Subject</label>
-                        <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                        <input type="text" class="form-control" name="subject" id="subject-field" required>
                       </div>
-      
+                  
                       <div class="col-md-12">
                         <label for="message-field" class="pb-2">Message</label>
-                        <textarea class="form-control" name="message" rows="5" id="message-field" required=""></textarea>
+                        <textarea class="form-control" name="message" rows="5" id="message-field" required></textarea>
                       </div>
-      
+                  
                       <div class="col-md-12 text-center">
-                        <!-- <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div> -->
-      
                         <button type="submit" class="mainBtn">Send Message</button>
                       </div>
-      
                     </div>
                   </form>
+                  
                 </div>
              
                   <!-- <div class="contact_details map">
