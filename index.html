@@ -58,6 +58,14 @@
                   </ul>
                   <form class="d-flex">
                      <button class="btn nav_btn" type="submit">Call Now</button>
+                     <div class="toggle-container">
+                      <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+                        <i class="fa-solid fa-sun"></i>
+                      </button>
+                      <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                      </button>
+                    </div>
                   </form>
                </div>
             </div>
@@ -152,6 +160,9 @@
                            advantage of the company while having the scope to develop my
                            own skills.
                         </p>
+                        <div class="">
+                          <button class="AnimatedBtn">Download CV</button>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -290,6 +301,40 @@
                         </div> -->
                      </div>
                   </div>
+               </div>
+               <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature_card main_div">
+                   <div class="feature_icon">
+                      <i class="fa-brands fa-servicestack"></i>
+                   </div>
+                   <div class="feature_content">
+                      <h4><a href="#">SEO Friendly Website</a></h4>
+                      <p>
+                         I throw myself down among the tall grass by the stream as Ilie
+                         close to the earth.
+                      </p>
+                      <!-- <div class="read_more">
+                         <a href="#">Visit Site</a>
+                      </div> -->
+                   </div>
+                </div>
+               </div>
+               <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature_card main_div">
+                   <div class="feature_icon">
+                      <i class="fa-brands fa-servicestack"></i>
+                   </div>
+                   <div class="feature_content">
+                      <h4><a href="#">Theme Customize</a></h4>
+                      <p>
+                         I throw myself down among the tall grass by the stream as Ilie
+                         close to the earth.
+                      </p>
+                      <!-- <div class="read_more">
+                         <a href="#">Visit Site</a>
+                      </div> -->
+                   </div>
+                </div>
                </div>
             </div>
          </div>
@@ -541,7 +586,7 @@
             <div class="row mt-5">
                <div class="col-lg-4">
                   <div class="">
-                     <div class="section_title">
+                     <div class="section_title mb-3">
                         <h6>PERSONAL INFO</h6>
                         <h2>Explore Me.</h2>
                         <p>Urna neque sollicitudin odio tempus eleifend est. Vestibulum dictum turpis diam arcu rutrum interdum aliquet iaculis.</p>
@@ -943,6 +988,10 @@
              // instead of a settings object
            ],
          });
+      </script>
+      <script>
+        /*html theme customize varible css*/
+        const setTheme = theme => document.documentElement.className = theme;
       </script>
    </body>
 </html>
