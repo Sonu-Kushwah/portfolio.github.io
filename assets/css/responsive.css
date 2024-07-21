@@ -25,7 +25,13 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+    .navbar{
+        box-shadow: none !important;
+    }
+    .offcanvas-body .social ul{
+        justify-content: center;
+    }
     .nav-tabs .nav-link {
         width: 100%;
         margin-bottom: 15px;
