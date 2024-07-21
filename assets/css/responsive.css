@@ -36,6 +36,13 @@
         width: 100%;
         margin-bottom: 15px;
     }
+    .banner{
+        height: 100% !important;
+        background-position-x:center;
+    }
+    .banner img{
+        width: 50%;
+    }
     .section_title h2 {
         font-size: 25px;
     }
