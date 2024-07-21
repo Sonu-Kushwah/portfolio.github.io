@@ -48,7 +48,7 @@ p{
 a{
   text-decoration: none;
   text-transform: capitalize;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 iframe {
   width: 100%;
@@ -75,7 +75,7 @@ iframe {
 } */
 .main_div{
   box-shadow: 0px 4px 10px 0px rgb(230 230 230);
-  background:var(--bg-color);
+  /* background:var(--bg-color); */
   position: relative;
 }
 .main_div::before{
@@ -193,6 +193,7 @@ header{
 }
 .navbar{
   padding: 8px 0;
+  box-shadow: 0px 13px 10px -16px #1111117a;
 }
 .navbar ul>li>a{
   display: inline-block;
@@ -267,12 +268,23 @@ header{
   font-size: 25px; 
   margin-bottom: 15px;
 }
+.feature_content h4 a{
+  color: var(--darkColor) ;
+}
 .feature_card:hover .feature_icon, .feature_card:hover .feature_content h4 a, .feature_card:hover p{
   color: var(--white);
 }
 .feature_card:hover .read_more a{
   color: var(--white);
   text-decoration: underline;
+}
+.feature_content p{
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*portfolio*/
 .portfolio_card{
@@ -412,6 +424,12 @@ header{
 .skillsIcon i{
   font-size: 130px;
 }
+.mui-logo{
+  width: 323px !important;
+}
+.skillsIcon img{
+  width: 130px;
+}
 .skillsWraper h2{
 
 }
@@ -526,6 +544,7 @@ footer{
   text-align: center;
   line-height: 50px;
   transition: all 0.3s;
+  color: var(--darkColor);
 }
 .social ul li a:hover{
   color: var(--white);
@@ -543,6 +562,7 @@ footer{
   position: relative;
   transition: all 0.3s;
   font-size: 18px;
+  color: var(--darkColor);
 }
 .footer_list ul li a::after{
   position: absolute;
@@ -576,10 +596,23 @@ footer{
   right: 10px;
   bottom: 10px;
  }
+ #myBtn:hover i{
+  color: var(--white);
+ }
 .top_bottom .main_div::before{
   border-radius: 50%;
 }
 .top_bottom .main_div:hover{
   color: var(--text-color);
 }
-/*skills*/
+
+.wattsp{
+  border: none;
+  background: transparent;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+}
+.wattsp img{
+  width: 50px;
+}
