@@ -62,10 +62,10 @@ iframe {
   font-weight: 700;
 }
 .section_title h2 span{
-  color: var(--pink);
+  color: #FFDB59;
 }
 .section_title h6{
-  color: var(--pink);
+  color: var(--text-color);
   text-transform: uppercase;
   letter-spacing: 3px;
   position: relative;
@@ -75,7 +75,7 @@ iframe {
 } */
 .main_div{
   box-shadow: 0px 4px 10px 0px rgb(230 230 230);
-  /* background:var(--bg-color); */
+  background:var(--bg-color);
   position: relative;
 }
 .main_div::before{
@@ -194,6 +194,7 @@ header{
 .navbar{
   padding: 8px 0;
   box-shadow: 0px 13px 10px -16px #1111117a;
+  background-color: var(--bg-color);
 }
 .navbar ul>li>a{
   display: inline-block;
@@ -254,6 +255,50 @@ header{
   margin-top: 0px;
 }
 
+/*banner section css*/
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/Banner-Image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+.banner::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 1, 12, 0.75);
+  z-index: -1;
+}
+.BannerImg {
+  visibility: visible;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-name: fadeInRight;
+  animation: spin-clockwise 12s infinite linear;
+}
+@keyframes spin-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.banner_content p{
+  color: #fff;
+}
+.banner_content h2{
+  color: #fff;
+}
 /*feature*/
 .feature_card{
   padding: 40px 45px;
@@ -390,7 +435,7 @@ header{
   text-align: center;
 }
 .client-logo img {
-  max-width: 45%;
+  max-width: 58%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -417,6 +462,8 @@ header{
   border-color: var(--pink);
   background-color: var(--pink);
   color: var(--white);
+  transition: all .5s;
+  transform : translateY(-10px);
 }
 .skillsIcon {
   margin-bottom: 15px;
@@ -548,6 +595,7 @@ footer{
 }
 .social ul li a:hover{
   color: var(--white);
+  border-radius: 10px;
 }
 .footer_widegts h5{
   color: var(--pink);
