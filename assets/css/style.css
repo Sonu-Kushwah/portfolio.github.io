@@ -221,17 +221,23 @@ header{
   padding-left: 15px;
 }
 .nav_btn{
-  color:var(--pink);
-  text-transform: uppercase;
+  border: 2px solid #0b738d !important;
+  color:#0b738d;
+  border-radius: 0;
+  text-transform: uppercase !important;
   font-weight: 500;
   font-size: 14px;
   border: none;
   box-shadow: 0px 0px 9px -4px rgb(230 230 230);
-  padding: 13px 25px;
+  padding: 10px 22px;
   border-radius: 10px;
   transition: all 0.2s;
   position: relative;
   z-index: 0;
+}
+.nav_btn:hover{
+  background-color: #0b738d;
+  color: #fff !important;
 }
 
 .nav_btn::before{
@@ -247,9 +253,7 @@ header{
   transition: all 0.3s;
   z-index: -1;
 }
-.nav_btn:hover{
-  color: var(--pink) !important;
-}
+
 .nav_btn:hover::before{
   width: 100%;
   color:var(--white);
@@ -428,6 +432,9 @@ header{
 }
 .contact_info h3{
   font-size: 20px;
+}
+.contact_info a{
+  color: #0b738d;
 }
 .contact_details form input,.contact_details form textarea{
   border-radius: 0;
