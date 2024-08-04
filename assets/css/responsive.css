@@ -43,6 +43,9 @@
     .banner img{
         width: 50%;
     }
+    .BannerImg{
+         display:none;
+    }
     .section_title h2 {
         font-size: 25px;
     }
