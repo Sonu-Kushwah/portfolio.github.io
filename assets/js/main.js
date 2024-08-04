@@ -42,6 +42,7 @@
   /*logo slider */
   $(".logo_slider").slick({
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 300,
     slidesToShow: 6,
@@ -79,6 +80,7 @@
  /*project slider */
  $(".project_slider").slick({
   dots: false,
+  arrows: true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
