@@ -476,6 +476,9 @@ header{
   border: 3px solid var(--pink);
 }
 /*=======================clients=========================*/
+.logo_slider{
+  text-align: center;
+}
 .clients{
   background-color: #f3f5fa;
   padding: 12px 0;
