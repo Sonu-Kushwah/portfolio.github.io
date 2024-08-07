@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>portfolio</title>
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-         />
-         <!--aos animation-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--aos animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="assets/css/slick.css" />
-      <link rel="stylesheet" href="assets/css/slick-theme.css" />
-      <link rel="stylesheet" href="assets/css/style.css" />
-      <link rel="stylesheet" href="assets/css/responsive.css" />
-     
-   </head>
-   <body>
-      <!--header-->
-      <header>
-         <nav class="navbar navbar-expand-lg fixed-top" id="navbar_top">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar_top">
             <div class="container">
-               <a class="navbar-brand" href="#banner">
-               <img src="assets/images/logo/logo.png" />
-               </a>
-               <button
-                  class="btn navbar-toggler"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample"
-                  >
-                  <i class="fa-solid fa-bars"></i>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#banner"
-                           >Home</a
+                <a class="navbar-brand" href="#banner">
+                    <img src="assets/images/logo/logo.png" />
+                </a>
+                <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#banner">Home</a
                            >
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#resume">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#feature">Service</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#project">Project</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                     </li>
-                  </ul>
-                  <div class="d-flex">
-                     <a  href="tel:91 8358957395" class="btn nav_btn" >Call Now</a>
-                     <!-- <div class="toggle-container">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feature">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="tel:91 8358957395" class="btn nav_btn">Call Now</a>
+                        <!-- <div class="toggle-container">
                       <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
                         <i class="fa-solid fa-sun" style="color: #fff;"></i>
                       </button>
@@ -68,777 +60,694 @@
                         <i class="fa-solid fa-moon"></i>
                       </button>
                     </div> -->
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </nav>
-      </header>
-      <!--mobile menu-->
-      <div
-         class="offcanvas offcanvas-start"
-         tabindex="-1"
-         id="offcanvasExample"
-         aria-labelledby="offcanvasExampleLabel"
-         >
-         <div class="offcanvas-header">
+        </nav>
+    </header>
+    <!--mobile menu-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
             <img src="assets/images/logo/logo.png" style="width: 100px;" class="img-fluid" />
-            <button
-               type="button"
-               class="btn-close text-reset"
-               data-bs-dismiss="offcanvas"
-               aria-label="Close"
-               ></button>
-         </div>
-         <div class="offcanvas-body">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
             <nav class="navbar">
-               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#banner"
-                           >Home</a
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#banner">Home</a
                            >
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#resume">About</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#feature">Service</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#project">Project</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#resume">Resume</a>
-                     </li>
-                     <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                     </li>
-               </ul>
+                    </li>
+                </ul>
             </nav>
             <div class="social">
-               <ul>
-                  <li>
-                     <a href="#" class="main_div"
-                        ><i class="fa-brands fa-facebook-f"></i
+                <ul>
+                    <li>
+                        <a href="#" class="main_div"><i class="fa-brands fa-facebook-f"></i
                         ></a>
-                  </li>
-                  <li>
-                     <a href="#" class="main_div"
-                        ><i class="fa-brands fa-instagram"></i
+                    </li>
+                    <li>
+                        <a href="#" class="main_div"><i class="fa-brands fa-instagram"></i
                         ></a>
-                  </li>
-                  <li>
-                     <a href="#" class="main_div"
-                        ><i class="fa-brands fa-linkedin-in"></i
+                    </li>
+                    <li>
+                        <a href="#" class="main_div"><i class="fa-brands fa-linkedin-in"></i
                         ></a>
-                  </li>
-                  <li>
-                     <a href="#" class="main_div"
-                        ><i class="fa-brands fa-skype"></i
+                    </li>
+                    <li>
+                        <a href="#" class="main_div"><i class="fa-brands fa-skype"></i
                         ></a>
-                  </li>
-               </ul>
+                    </li>
+                </ul>
             </div>
-         </div>
-      </div>
-      <!--banner-->
-      <section class="banner section_gapping" id="banner">
-         <div class="container">
+        </div>
+    </div>
+    <!--banner-->
+    <section class="banner section_gapping" id="banner">
+        <div class="container">
             <div class="row mt-5 d-flex align-items-center">
-               <div class="col-lg-7 col-md-6">
-                  <div class="banner_content">
-                     <div class="section_title ">
-                        <h6 class="text-white justify-content-start">WELCOME TO MY PORFOLIO</h6>                     
-                           <h2 class="text-start">Hi, I’m <span>Sonu Kushwah</span></h2>
-                        <h2>
+                <div class="col-lg-7 col-md-6">
+                    <div class="banner_content">
+                        <div class="section_title ">
+                            <h6 class="text-white justify-content-start">WELCOME TO MY PORFOLIO</h6>
+                            <h2 class="text-start">Hi, I’m <span>Sonu Kushwah</span></h2>
+                            <h2>
                            <span class="text-start" style=" color: #fff"
                               >I <span class="text-start" style="text-transform: lowercase;">am</span></span
                               >
                            <span class="text text-start"></span>
                         </h2>
-                        <p>
-                           A dedicated individual with in-depth knowledge of programming
-                           languages and development tools, seeking a position in a
-                           growth-oriented company where I can use my skills to the
-                           advantage of the company while having the scope to develop my
-                           own skills.
-                        </p>
-                        <div class="">
-                          <!-- <button href="cv.pdf" download="your-file.pdf" class="AnimatedBtn">ddfdf</button> -->
-                          <a href="cv.pdf" download="your-file.pdf" target="_blank" class="AnimatedBtn mt-3">Download CV 
+                            <p>
+                                A dedicated individual with in-depth knowledge of programming languages and development tools, seeking a position in a growth-oriented company where I can use my skills to the advantage of the company while having the scope to develop my own skills.
+                            </p>
+                            <div class="">
+                                <!-- <button href="cv.pdf" download="your-file.pdf" class="AnimatedBtn">ddfdf</button> -->
+                                <a href="cv.pdf" download="your-file.pdf" target="_blank" class="AnimatedBtn mt-3">Download CV 
                            <i class="fa-solid fa-angle-down" style="margin-left: 10px;"></i>
                           </a>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-5 col-md-6 ">
-                  <div class="BannerImg " data-aos="zoom-in">
-                     <img src="assets/images/bannerCirle.png" class="img-fluid" />
-                  </div>
-               </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 ">
+                    <div class="BannerImg " data-aos="zoom-in">
+                        <img src="assets/images/bannerCirle.png" class="img-fluid" />
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <!--banner //-->
-      <!--what-->
-      <section class="feature section_gapping" id="feature">
-         <div class="container">
+        </div>
+    </section>
+    <!--banner //-->
+    <!--what-->
+    <section class="feature section_gapping" id="feature">
+        <div class="container">
             <div class="section_title">
-               <h6>Service</h6>
-               <h2>What I Do</h2>
+                <h6>Service</h6>
+                <h2>What I Do</h2>
             </div>
             <div class="row mt-5">
-               <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="feature_card main_div">
-                     <div class="feature_icon">
-                        <i class="fa-brands fa-servicestack"></i>
-                     </div>
-                     <div class="feature_content">
-                        <h4><a href="#">Figma To HTML</a></h4>
-                        <p>
-                           Converting Figma designs to HTML involves translating visual elements into code. Start by exporting assets from Figma, such as images and icons. 
-                        </p>
-                        <!-- <div class="read_more">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">Figma To HTML</a></h4>
+                            <p>
+                                Converting Figma designs to HTML involves translating visual elements into code. Start by exporting assets from Figma, such as images and icons.
+                            </p>
+                            <!-- <div class="read_more">
                            <a href="#">Visit Site</a>
                         </div> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="feature_card main_div">
-                     <div class="feature_icon">
-                        <i class="fa-brands fa-servicestack"></i>
-                     </div>
-                     <div class="feature_content">
-                        <h4><a href="#">Wireframe to HTML</a></h4>
-                        <p>
-                           Transforming a wireframe into HTML involves several key steps. Start by creating a basic HTML structure with the <!DOCTYPE html>
-                        </p>
-                        <!-- <div class="read_more">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">Wireframe to HTML</a></h4>
+                            <p>
+                                Transforming a wireframe into HTML involves several key steps. Start by creating a basic HTML structure with the
+                                <!DOCTYPE html>
+                            </p>
+                            <!-- <div class="read_more">
                            <a href="#">Visit Site</a>
                         </div> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="feature_card main_div">
-                     <div class="feature_icon">
-                        <i class="fa-brands fa-servicestack"></i>
-                     </div>
-                     <div class="feature_content">
-                        <h4><a href="#">Responsive Design</a></h4>
-                        <p>
-                           Responsive design is a web development approach aimed at creating sites that provide an optimal viewing experience across a wide range of devices. By using flexible grids, layouts, images, and CSS media queries, responsive design ensures that web content adjusts seamlessly to various screen sizes and orientations. 
-                        </p>
-                        <!-- <div class="read_more">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">Responsive Design</a></h4>
+                            <p>
+                                Responsive design is a web development approach aimed at creating sites that provide an optimal viewing experience across a wide range of devices. By using flexible grids, layouts, images, and CSS media queries, responsive design ensures that web content
+                                adjusts seamlessly to various screen sizes and orientations.
+                            </p>
+                            <!-- <div class="read_more">
                            <a href="#">Visit Site</a>
                         </div> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="feature_card main_div">
-                     <div class="feature_icon">
-                        <i class="fa-brands fa-servicestack"></i>
-                     </div>
-                     <div class="feature_content">
-                        <h4><a href="#">React Website</a></h4>
-                        <p>
-                           A React website offers a dynamic and responsive user experience. Built with the popular JavaScript library, it enables fast rendering and seamless updates. React’s component-based architecture promotes reusability and efficiency, making it ideal for modern, interactive web applications. Enjoy high performance and flexibility with a React-powered site.
-                        </p>
-                        <!-- <div class="read_more">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">React Website</a></h4>
+                            <p>
+                                A React website offers a dynamic and responsive user experience. Built with the popular JavaScript library, it enables fast rendering and seamless updates. React’s component-based architecture promotes reusability and efficiency, making it ideal for modern,
+                                interactive web applications. Enjoy high performance and flexibility with a React-powered site.
+                            </p>
+                            <!-- <div class="read_more">
                            <a href="#">Visit Site</a>
                         </div> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="feature_card main_div">
-                     <div class="feature_icon">
-                        <i class="fa-brands fa-servicestack"></i>
-                     </div>
-                     <div class="feature_content">
-                        <h4><a href="#">PDF Template Design</a></h4>
-                        <p>
-                           A well-designed PDF template enhances document consistency and professionalism. It features customizable layouts, fonts, and branding elements, ensuring uniformity across all documents. Ideal for reports, invoices, and presentations, a good template streamlines workflow and improves readability, making your PDFs visually appealing and efficient to use.
-                        </p>
-                        <!-- <div class="read_more">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">PDF Template Design</a></h4>
+                            <p>
+                                A well-designed PDF template enhances document consistency and professionalism. It features customizable layouts, fonts, and branding elements, ensuring uniformity across all documents. Ideal for reports, invoices, and presentations, a good template streamlines
+                                workflow and improves readability, making your PDFs visually appealing and efficient to use.
+                            </p>
+                            <!-- <div class="read_more">
                            <a href="#">Visit Site</a>
                         </div> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="feature_card main_div">
-                     <div class="feature_icon">
-                        <i class="fa-brands fa-servicestack"></i>
-                     </div>
-                     <div class="feature_content">
-                        <h4><a href="#">Email Template Design</a></h4>
-                        <p>
-                           An effective email template design ensures consistency and professionalism in your communications. It includes customizable layouts, branded elements, and clear call-to-action buttons. Ideal for newsletters, promotions, and updates, a well-designed template enhances readability, engagement, and overall effectiveness, making your emails visually appealing and impactful.
-                        </p>
-                        <!-- <div class="read_more">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">Email Template Design</a></h4>
+                            <p>
+                                An effective email template design ensures consistency and professionalism in your communications. It includes customizable layouts, branded elements, and clear call-to-action buttons. Ideal for newsletters, promotions, and updates, a well-designed template
+                                enhances readability, engagement, and overall effectiveness, making your emails visually appealing and impactful.
+                            </p>
+                            <!-- <div class="read_more">
                            <a href="#">Visit Site</a>
                         </div> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="feature_card main_div">
-                     <div class="feature_icon">
-                        <i class="fa-brands fa-servicestack"></i>
-                     </div>
-                     <div class="feature_content">
-                        <h4><a href="#">Redesign Website</a></h4>
-                        <p>
-                           I throw myself down among the tall grass by the stream as Ilie
-                           close to the earth.
-                        </p>
-                        <!-- <div class="read_more">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">Redesign Website</a></h4>
+                            <p>
+                                Revamp your website with a modern, responsive design. Enhance user experience with intuitive navigation, vibrant visuals, and optimized performance. Showcase your brand's unique identity with sleek layouts and engaging content. Improve SEO, ensure mobile
+                                compatibility, and boost conversion rates. Transform your online presence today for greater impact and success.
+                            </p>
+                            <!-- <div class="read_more">
                            <a href="#">Visit Site</a>
                         </div> -->
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature_card main_div">
-                   <div class="feature_icon">
-                      <i class="fa-brands fa-servicestack"></i>
-                   </div>
-                   <div class="feature_content">
-                      <h4><a href="#">SEO Friendly Website</a></h4>
-                      <p>
-                         I throw myself down among the tall grass by the stream as Ilie
-                         close to the earth.
-                      </p>
-                      <!-- <div class="read_more">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">SEO Friendly Website</a></h4>
+                            <p>
+                                Our SEO-friendly web design enhances visibility and boosts rankings. With optimized content, fast loading speeds, and mobile responsiveness, your site will attract more traffic. Elevate your online presence and reach your audience effectively. Discover
+                                the benefits of SEO-focused design today! Contact us for more details.
+                            </p>
+                            <!-- <div class="read_more">
                          <a href="#">Visit Site</a>
                       </div> -->
-                   </div>
+                        </div>
+                    </div>
                 </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-4">
-                <div class="feature_card main_div">
-                   <div class="feature_icon">
-                      <i class="fa-brands fa-servicestack"></i>
-                   </div>
-                   <div class="feature_content">
-                      <h4><a href="#">Theme Customize</a></h4>
-                      <p>
-                         I throw myself down among the tall grass by the stream as Ilie
-                         close to the earth.
-                      </p>
-                      <!-- <div class="read_more">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature_card main_div">
+                        <div class="feature_icon">
+                            <i class="fa-brands fa-servicestack"></i>
+                        </div>
+                        <div class="feature_content">
+                            <h4><a href="#">Template Customize</a></h4>
+                            <p>
+                                Our SEO-friendly web design enhances visibility and boosts rankings. With optimized content, fast loading speeds, and mobile responsiveness, your site will attract more traffic. Elevate your online presence and reach your audience effectively. Discover
+                                the benefits of SEO-focused design today! Contact us for more details.
+                            </p>
+                            <!-- <div class="read_more">
                          <a href="#">Visit Site</a>
                       </div> -->
-                   </div>
+                        </div>
+                    </div>
                 </div>
-               </div>
             </div>
-         </div>
-      </section>
-      <!--what //-->
-      <!--porfolio-->
-      <section class="portfolio section_gapping" id="project">
-         <div class="container">
+        </div>
+    </section>
+    <!--what //-->
+    <!--porfolio-->
+    <section class="portfolio section_gapping" id="project">
+        <div class="container">
             <div class="section_title text-center" data-aos="fade-up">
-               <h6>PORTFOLIO </h6>
-               <h2>Recent Project</h2>
+                <h6>PORTFOLIO </h6>
+                <h2>Recent Project</h2>
             </div>
-           
+
             <div class="project_slider mt-5" data-aos="fade-up">
-             
-                  <div class="portfolio_card">
-                     <div class="portfolio_img">
-                        <img
-                           src="assets/images/porfolio/bookforvisa.png"
-                           class="img-fluid"
-                           />
-                     </div>
-                     <div class="portfolio_content">
-                        <div
-                           class="top_header d-flex justify-content-between align-items-center mb-2"
-                           >
-                           <h6>Bookforvisa</h6>
-                          
+
+                <div class="portfolio_card">
+                    <div class="portfolio_img">
+                        <img src="assets/images/porfolio/bookforvisa.png" class="img-fluid" />
+                    </div>
+                    <div class="portfolio_content">
+                        <div class="top_header d-flex justify-content-between align-items-center mb-2">
+                            <h6>Bookforvisa</h6>
+
                         </div>
                         <p>
-                           Bookforvisa is a website that deals in dummy flight tickets.
-                           The website is designed to help individuals and businesses to
-                           manage their travel visas and immigration needs with ease.
+                            Bookforvisa is a website that deals in dummy flight tickets. The website is designed to help individuals and businesses to manage their travel visas and immigration needs with ease.
                         </p>
                         <h4>
                            <a href="http://137.184.57.201/" target="_blank">Visit Site</a>
                         </h4>
-                     </div>
-                  </div>
-             
-               
-                  <div class="portfolio_card">
-                     <div class="portfolio_img">
-                        <img
-                           src="assets/images/porfolio/dummyflight.png"
-                           class="img-fluid"
-                           />
-                     </div>
-                     <div class="portfolio_content">
-                        <div
-                           class="top_header d-flex justify-content-between align-items-center mb-2"
-                           >
-                           <h6>Dummyflights</h6>
-                          
+                    </div>
+                </div>
+
+
+                <div class="portfolio_card">
+                    <div class="portfolio_img">
+                        <img src="assets/images/porfolio/dummyflight.png" class="img-fluid" />
+                    </div>
+                    <div class="portfolio_content">
+                        <div class="top_header d-flex justify-content-between align-items-center mb-2">
+                            <h6>Dummyflights</h6>
+
                         </div>
                         <p>
-                           Dummyflights is a travel app that specializes in dummy flight
-                           tickets. With its user-friendly interface, it makes it easy
-                           for travelers to book and manage their dummy flight tickets.
+                            Dummyflights is a travel app that specializes in dummy flight tickets. With its user-friendly interface, it makes it easy for travelers to book and manage their dummy flight tickets.
                         </p>
                         <h4>
                            <a href="https://dummyflights.com/?gad_source=1&gclid=EAIaIQobChMIsN3agdKlhwMViCWDAx2k3QbEEAAYASAAEgLu8_D_BwE" target="_blank">Visit Site</a>
                         </h4>
-                     </div>
-                  </div>
-               
-              
-                  <div class="portfolio_card">
-                     <div class="portfolio_img">
-                        <img
-                           src="assets/images/porfolio/sevenopal.png"
-                           class="img-fluid"
-                           />
-                     </div>
-                     <div class="portfolio_content">
-                        <div
-                           class="top_header d-flex justify-content-between align-items-center mb-2"
-                           >
-                           <h6>Sevenopal</h6>
-                          
+                    </div>
+                </div>
+
+
+                <div class="portfolio_card">
+                    <div class="portfolio_img">
+                        <img src="assets/images/porfolio/sevenopal.png" class="img-fluid" />
+                    </div>
+                    <div class="portfolio_content">
+                        <div class="top_header d-flex justify-content-between align-items-center mb-2">
+                            <h6>Sevenopal</h6>
+
                         </div>
                         <p>
-                           We are Miner and Manufacturer of Australian Opals and not the
-                           Trader
+                            We are Miner and Manufacturer of Australian Opals and not the Trader
                         </p>
                         <h4>
                            <a href="https://www.sevenopal.com/" target="_blank">Visit Site</a>
                         </h4>
-                     </div>
-                  </div>
-            
-              
-                  <div class="portfolio_card">
-                     <div class="portfolio_img">
-                        <img
-                           src="assets/images/porfolio/flexmark.png"
-                           class="img-fluid"
-                           />
-                     </div>
-                     <div class="portfolio_content">
-                        <div
-                           class="top_header d-flex justify-content-between align-items-center mb-2"
-                           >
-                           <h6>Flexo Mark</h6>
-                          
+                    </div>
+                </div>
+
+
+                <div class="portfolio_card">
+                    <div class="portfolio_img">
+                        <img src="assets/images/porfolio/flexmark.png" class="img-fluid" />
+                    </div>
+                    <div class="portfolio_content">
+                        <div class="top_header d-flex justify-content-between align-items-center mb-2">
+                            <h6>Flexo Mark</h6>
+
                         </div>
                         <p>
-                           We are Miner and Manufacturer of Australian Opals and not the
-                           Trader
+                            We are Miner and Manufacturer of Australian Opals and not the Trader
                         </p>
                         <h4>
                            <a href="https://digimonk.net/flexomark/html/" target="_blank">Visit Site</a>
                         </h4>
-                     </div>
-                  </div>
-               
-           
-                  <div class="portfolio_card">
-                     <div class="portfolio_img">
-                        <img
-                           src="assets/images/porfolio/gensis.png"
-                           class="img-fluid"
-                           />
-                     </div>
-                     <div class="portfolio_content">
-                        <div
-                           class="top_header d-flex justify-content-between align-items-center mb-2"
-                           >
-                           <h6>Genesis</h6>             
+                    </div>
+                </div>
+
+
+                <div class="portfolio_card">
+                    <div class="portfolio_img">
+                        <img src="assets/images/porfolio/gensis.png" class="img-fluid" />
+                    </div>
+                    <div class="portfolio_content">
+                        <div class="top_header d-flex justify-content-between align-items-center mb-2">
+                            <h6>Genesis</h6>
                         </div>
                         <p>
-                           We are Miner and Manufacturer of Australian Opals and not the
-                           Trader
+                            We are Miner and Manufacturer of Australian Opals and not the Trader
                         </p>
                         <h4>
                            <a href="https://genesis.digimonk.site/" target="_blank">Visit Site</a>
                         </h4>
-                     </div>
-                  </div>
-           
-           
-                  <div class="portfolio_card">
-                     <div class="portfolio_img">
-                        <img
-                           src="assets/images/porfolio/getmyticket.png"
-                           class="img-fluid"
-                           />
-                     </div>
-                     <div class="portfolio_content">
-                        <div
-                           class="top_header d-flex justify-content-between align-items-center mb-2"
-                           >
-                           <h6>Get My Ticket</h6>
-                          
+                    </div>
+                </div>
+
+
+                <div class="portfolio_card">
+                    <div class="portfolio_img">
+                        <img src="assets/images/porfolio/getmyticket.png" class="img-fluid" />
+                    </div>
+                    <div class="portfolio_content">
+                        <div class="top_header d-flex justify-content-between align-items-center mb-2">
+                            <h6>Get My Ticket</h6>
+
                         </div>
                         <p>
-                           We are Miner and Manufacturer of Australian Opals and not the
-                           Trader
+                            We are Miner and Manufacturer of Australian Opals and not the Trader
                         </p>
                         <h4>
                            <a href="https://digimonk.net/getmyticket/html/" target="_blank">Visit Site</a>
                         </h4>
-                     </div>
-                  </div>
-            
+                    </div>
+                </div>
+
             </div>
-         </div>
-      </section>
-      <!--porfolio //-->
-      <!--client section start-->
-      <section class="client section_gapping" id="client">
-         <div class="container">
+        </div>
+    </section>
+    <!--porfolio //-->
+    <!--client section start-->
+    <section class="client section_gapping" id="client">
+        <div class="container">
             <div class="section_title text-center">
-               <h6>What are Cient Say</h6>
-               <h2>Client</h2>
+                <h6>What are Cient Say</h6>
+                <h2>Client</h2>
             </div>
             <div class="logo_slider mt-5">
-               <div class="client-logo">
-                  <img
-                     src="assets/images/clients/logo1.svg"
-                     class="img-fluid"
-                     alt="client-logo"
-                     />
-               </div>
-               <div class="client-logo">
-                  <img
-                     src="assets/images/clients/logo2.png"
-                     class="img-fluid"
-                     alt="client-logo"
-                     />
-               </div>
-               <div class="client-logo">
-                  <img
-                     src="assets/images/clients/logo3.svg"
-                     class="img-fluid"
-                     alt="client-logo"
-                     />
-               </div>
-               <div class="client-logo">
-                  <img
-                     src="assets/images/clients/logo4.png"
-                     class="img-fluid"
-                     alt="client-logo"
-                     />
-               </div>
-               <div class="client-logo">
-                  <img
-                     src="assets/images/clients/logo5.png"
-                     class="img-fluid"
-                     alt="client-logo"
-                     />
-               </div>
-               <div class="client-logo">
-                  <img
-                     src="assets/images/clients/logo6.jpeg"
-                     class="img-fluid"
-                     alt="client-logo"
-                     />
-               </div>
-               <div class="client-logo">
-                  <img
-                     src="assets/images/clients/logo7.png"
-                     class="img-fluid"
-                     alt="client-logo7"
-                     />
-               </div>
+                <div class="client-logo">
+                    <img src="assets/images/clients/logo1.svg" class="img-fluid" alt="client-logo" />
+                </div>
+                <div class="client-logo">
+                    <img src="assets/images/clients/logo2.png" class="img-fluid" alt="client-logo" />
+                </div>
+                <div class="client-logo">
+                    <img src="assets/images/clients/logo3.svg" class="img-fluid" alt="client-logo" />
+                </div>
+                <div class="client-logo">
+                    <img src="assets/images/clients/logo4.png" class="img-fluid" alt="client-logo" />
+                </div>
+                <div class="client-logo">
+                    <img src="assets/images/clients/logo5.png" class="img-fluid" alt="client-logo" />
+                </div>
+                <div class="client-logo">
+                    <img src="assets/images/clients/logo6.jpeg" class="img-fluid" alt="client-logo" />
+                </div>
+                <div class="client-logo">
+                    <img src="assets/images/clients/logo7.png" class="img-fluid" alt="client-logo7" />
+                </div>
             </div>
-         </div>
-      </section>
-      <!--client section end-->
-      <!--skill seciotn-->
-      <section class="skills section_gapping">
-         <div class="container" >
-            <div class="section_title text-center" >
-               <h6>MY SKILLS</h6>
-               <h2>My Expertise.</h2>
+        </div>
+    </section>
+    <!--client section end-->
+    <!--skill seciotn-->
+    <section class="skills section_gapping">
+        <div class="container">
+            <div class="section_title text-center">
+                <h6>MY SKILLS</h6>
+                <h2>My Expertise.</h2>
             </div>
-            <div class="row mt-5" >
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <i class="fa-brands fa-html5"></i>
-                     </div>
-                     <h2>HTML</h2>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <i class="fa-brands fa-css3-alt"></i>
-                     </div>
-                     <h2>CSS</h2>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <i class="fa-brands fa-js"></i>
-                     </div>
-                     <h2>JavaScriptL</h2>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <i class="fa-brands fa-bootstrap"></i>
-                     </div>
-                     <h2>Bootstrap</h2>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <i class="fa-brands fa-react"></i>
-                     </div>
-                     <h2>React</h2>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <i class="fa-brands fa-github"></i>
-                     </div>
-                     <h2>Github</h2>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <!-- <i class="fa-brands fa-html5"></i> -->
-                        <img src="assets/images/mui.png" class="mui-logo">
-                     </div>
-                     <h2>Material</h2>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 mb-4">
-                  <div class="skillsWraper">
-                     <div class="skillsIcon">
-                        <!-- <i class="fa-brands fa-html5"></i> -->
-                        <img src="assets/images/next.svg">
-                     </div>
-                     <h2>Next</h2>
-                  </div>
-               </div>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h2>CSS</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h2>JavaScriptL</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <h2>Bootstrap</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <h2>React</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h2>Github</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <!-- <i class="fa-brands fa-html5"></i> -->
+                            <img src="assets/images/mui.png" class="mui-logo">
+                        </div>
+                        <h2>Material</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 mb-4">
+                    <div class="skillsWraper">
+                        <div class="skillsIcon">
+                            <!-- <i class="fa-brands fa-html5"></i> -->
+                            <img src="assets/images/next.svg">
+                        </div>
+                        <h2>Next</h2>
+                    </div>
+                </div>
             </div>
-         </div>
-         </div>
-      </section>
-      <!--End skills Logo-->
-      <!--personal-info-->
-      <section class="resume section_gapping" id="resume">
-         <div class="container">
+        </div>
+        </div>
+    </section>
+    <!--End skills Logo-->
+    <!--personal-info-->
+    <section class="resume section_gapping" id="resume">
+        <div class="container">
             <!-- <div class="section_title text-center">
                <h6>PERSONAL INFO</h6>
                <h2>Explore Me.</h2>
             </div> -->
-            <div class="row mt-5" >
-               <div class="col-lg-4">
-                  <div class="">
-                     <div class="section_title mb-3">
-                        <h6>PERSONAL INFO</h6>
-                        <h2>Explore Me.</h2>
-                        <p>Urna neque sollicitudin odio tempus eleifend est. Vestibulum dictum turpis diam arcu rutrum interdum aliquet iaculis.</p>
-                     </div>
-                     <div class="personaCirleGrid position-relative">
-                        <div class="circle">
-                           <h5>View My Work</h5>
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="">
+                        <div class="section_title mb-3">
+                            <h6>PERSONAL INFO</h6>
+                            <h2>Explore Me.</h2>
+                            <p>Urna neque sollicitudin odio tempus eleifend est. Vestibulum dictum turpis diam arcu rutrum interdum aliquet iaculis.</p>
                         </div>
-                        <div class="circle">
-                           <h5>Contact Me</h5>
+                        <div class="personaCirleGrid position-relative">
+                            <div class="circle">
+                                <h5>View My Work</h5>
+                            </div>
+                            <div class="circle">
+                                <h5>Contact Me</h5>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-8">
-                  <div class="accordion" id="accordionExample">
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                            Education
                            </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                           <div class="accordion-body">
-                              <p>Eu nulla at mauris cursus consectetur posuere iaculis ipsum neque. Morbi felis pellentesque ligula sed dictumst. Imperdiet nunc vulputate metus pellentesque.</p>
-                              <div class="education position-relative">
-                                 <div class="side_circle_ring">
-                                    <div class="small_yellow_border">
-                                       <div class="small_yellow_circle"></div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Eu nulla at mauris cursus consectetur posuere iaculis ipsum neque. Morbi felis pellentesque ligula sed dictumst. Imperdiet nunc vulputate metus pellentesque.</p>
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">10th High School </p>
+                                            <p class="university">M.P Board 2009 - 2010</p>
+                                            <p class="cursus">The Saint Vincent H.S School The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="small_yellow_border_main">
-                                    <p class="bachelor">10th High School </p>
-                                    <p class="university">M.P Board 2009 - 2010</p>
-                                    <p class="cursus">The Saint Vincent H.S School
-                                      The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                                    </p>
-                                 </div>
-                              </div>
-                              <div class="education position-relative">
-                                <div class="side_circle_ring">
-                                   <div class="small_yellow_border">
-                                      <div class="small_yellow_circle"></div>
-                                   </div>
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">12th High School </p>
+                                            <p class="university">M.P Board 2011 - 2012</p>
+                                            <p class="cursus">Atit Bal H.S School The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">B.C.A (GICTS College)</p>
+                                            <p class="university">MCRPV University 2015</p>
+                                            <p class="cursus">Makhanlal Chaturvedi National University (2012-2015) The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="small_yellow_border_main">
-                                   <p class="bachelor">12th High School </p>
-                                   <p class="university">M.P Board 2011 - 2012</p>
-                                   <p class="cursus">Atit Bal H.S School
-                                     The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                                   </p>
-                                </div>
-                             </div>
-                             <div class="education position-relative">
-                              <div class="side_circle_ring">
-                                 <div class="small_yellow_border">
-                                    <div class="small_yellow_circle"></div>
-                                 </div>
-                              </div>
-                              <div class="small_yellow_border_main">
-                                 <p class="bachelor">B.C.A (GICTS College)</p>
-                                 <p class="university">MCRPV University 2015</p>
-                                 <p class="cursus">Makhanlal Chaturvedi National University (2012-2015)
-                                  The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                                 </p>
-                              </div>
-                           </div>
-                           </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                            Experience
                            </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                           <div class="accordion-body">
-                            <div class="education position-relative">
-                              <div class="side_circle_ring">
-                                 <div class="small_yellow_border">
-                                    <div class="small_yellow_circle"></div>
-                                 </div>
-                              </div>
-                              <div class="small_yellow_border_main">
-                                 <p class="bachelor">GlanceSys Information Technology Pvt. Ltd. </p>
-                                 <p class="university">Front End Devloper 2020</p>
-                                 <p class="cursus">
-                                   The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="education position-relative">
-                             <div class="side_circle_ring">
-                                <div class="small_yellow_border">
-                                   <div class="small_yellow_circle"></div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">GlanceSys Information Technology Pvt. Ltd. </p>
+                                            <p class="university">Front End Devloper 2020</p>
+                                            <p class="cursus">
+                                                The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">SNS System Pvt. Ltd. Gwalior</p>
+                                            <p class="university">Front End Devloper March-2022-Oct-2023</p>
+                                            <p class="cursus">
+                                                The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">Digimonk Technologies: CMMI Certified Company | Mobile </p>
+                                            <p class="university">Front End Devloper Oct 2023 Till Now</p>
+                                            <p class="cursus">
+                                                The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                             </div>
-                             <div class="small_yellow_border_main">
-                                <p class="bachelor">SNS System Pvt. Ltd. Gwalior</p>
-                                <p class="university">Front End Devloper March-2022-Oct-2023</p>
-                                <p class="cursus">
-                                  The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                                </p>
-                             </div>
-                          </div>
-                          <div class="education position-relative">
-                           <div class="side_circle_ring">
-                              <div class="small_yellow_border">
-                                 <div class="small_yellow_circle"></div>
-                              </div>
-                           </div>
-                           <div class="small_yellow_border_main">
-                              <p class="bachelor">Digimonk Technologies: CMMI Certified Company | Mobile </p>
-                              <p class="university">Front End Devloper Oct 2023 Till Now</p>
-                              <p class="cursus">
-                               The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                              </p>
-                           </div>
+                            </div>
                         </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                            My Expertise
                            </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                           <div class="accordion-body">
-                            <div class="education position-relative">
-                              <div class="side_circle_ring">
-                                 <div class="small_yellow_border">
-                                    <div class="small_yellow_circle"></div>
-                                 </div>
-                              </div>
-                              <div class="small_yellow_border_main">
-                                 <p class="bachelor">HTML/CSS</p>
-                                 <p class="university">Front End Devloper 2020</p>
-                                 <p class="cursus">
-                                   The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="education position-relative">
-                             <div class="side_circle_ring">
-                                <div class="small_yellow_border">
-                                   <div class="small_yellow_circle"></div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">HTML/CSS</p>
+                                            <p class="university">Front End Devloper 2020</p>
+                                            <p class="cursus">
+                                                The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">React/Nextjs</p>
+                                            <p class="university">Front End Devloper March-2022-Oct-2023</p>
+                                            <p class="cursus">
+                                                The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="education position-relative">
+                                        <div class="side_circle_ring">
+                                            <div class="small_yellow_border">
+                                                <div class="small_yellow_circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="small_yellow_border_main">
+                                            <p class="bachelor">Responsive Website</p>
+                                            <p class="university">Front End Devloper Oct 2023 Till Now</p>
+                                            <p class="cursus">
+                                                The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                             </div>
-                             <div class="small_yellow_border_main">
-                                <p class="bachelor">React/Nextjs</p>
-                                <p class="university">Front End Devloper March-2022-Oct-2023</p>
-                                <p class="cursus">
-                                  The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                                </p>
-                             </div>
-                          </div>
-                          <div class="education position-relative">
-                           <div class="side_circle_ring">
-                              <div class="small_yellow_border">
-                                 <div class="small_yellow_circle"></div>
-                              </div>
-                           </div>
-                           <div class="small_yellow_border_main">
-                              <p class="bachelor">Responsive Website</p>
-                              <p class="university">Front End Devloper Oct 2023 Till Now</p>
-                              <p class="cursus">
-                               The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.
-                              </p>
-                           </div>
+                            </div>
                         </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <!--personal-info //-->
-  
-      <!--contact-->
-      <!-- <section class="contact section_gapping" id="contact">
+        </div>
+    </section>
+    <!--personal-info //-->
+
+    <!--contact-->
+    <!-- <section class="contact section_gapping" id="contact">
          <div class="container">
             <div class="section_title text-center" >
                <h6>Info</h6>
@@ -929,190 +838,171 @@
          </div>
       </section> -->
 
-      <section class="contact section_gapping" id="contact">
-         <div class="container">
-            <div class="section_title text-center" >
-               <h6>Info</h6>
-               <h2>Contact</h2>
+    <section class="contact section_gapping" id="contact">
+        <div class="container">
+            <div class="section_title text-center">
+                <h6>Info</h6>
+                <h2>Contact</h2>
             </div>
-            <div class="row mt-5 " >
-               <div class="col-lg-5 col-md-6 mb-lg-0 mb-4">
-                  <div class="contact_details">
-                     <div class="contact_grid">
-                        <div class="contact_item">
-                           <div class="contact_icon main_div">
-                              <i class="fa-solid fa-location-dot"></i>
-                           </div>
-                           <div class="contact_info">
-                              <h3>Location</h3>
-                              <p>Anand Nagar Bhodapur Gwalior (M.P)</p>
-                           </div>
+            <div class="row mt-5 ">
+                <div class="col-lg-5 col-md-6 mb-lg-0 mb-4">
+                    <div class="contact_details">
+                        <div class="contact_grid">
+                            <div class="contact_item">
+                                <div class="contact_icon main_div">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact_info">
+                                    <h3>Location</h3>
+                                    <p>Anand Nagar Bhodapur Gwalior (M.P)</p>
+                                </div>
+                            </div>
+                            <div class="contact_item">
+                                <div class="contact_icon main_div">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact_info">
+                                    <h3>Email:</h3>
+                                    <a href="#">sonukushwah362@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact_item">
+                                <div class="contact_icon main_div">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact_info">
+                                    <h3>Mob:</h3>
+                                    <a href="tel:91 8358957395">+91 835857395</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact_item">
-                           <div class="contact_icon main_div">
-                              <i class="fa-solid fa-envelope"></i>
-                           </div>
-                           <div class="contact_info">
-                              <h3>Email:</h3>
-                              <a href="#">sonukushwah362@gmail.com</a>
-                           </div>
-                        </div>
-                        <div class="contact_item">
-                           <div class="contact_icon main_div">
-                              <i class="fa-solid fa-phone"></i>
-                           </div>
-                           <div class="contact_info">
-                              <h3>Mob:</h3>
-                              <a href="tel:91 8358957395">+91 835857395</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-7 col-md-6 mb-lg-0 mb-4">
-                  <div class="contact_details1  map">
-                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28629.927105333798!2d78.13468887651474!3d26.23760748904756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c65dd50a8135%3A0x11d590dd2c11659f!2sAnand%20Nagar%2C%20Gwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1681192620573!5m2!1sen!2sin"
-                        width="600"
-                        height="400"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                  </div>
-             
-                
-               </div>
-               <div class="col-lg-12">
-              
-               </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 mb-lg-0 mb-4">
+                    <div class="contact_details1  map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28629.927105333798!2d78.13468887651474!3d26.23760748904756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c65dd50a8135%3A0x11d590dd2c11659f!2sAnand%20Nagar%2C%20Gwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1681192620573!5m2!1sen!2sin"
+                        width="600" height="400" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-12">
+
+                </div>
             </div>
-         </div>
-      </section>
-      <!--skills //-->
-      <!--footer-->
-      <footer>
-         <div class="top_footer">
+        </div>
+    </section>
+    <!--skills //-->
+    <!--footer-->
+    <footer>
+        <div class="top_footer">
             <div class="container">
-               <div class="row">
-                  <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                     <div class="footer_widegts">
-                        <div class="footer_logo">
-                           <img src="assets/images/logo/logo.png" />
-                        </div>
-                        <div class="social">
-                           <ul>
-                              <li>
-                                 <a
-                                    href="https://www.facebook.com/sonu.kushwah.1238292" target="_blank"
-                                    class="main_div"
-                                    ><i class="fa-brands fa-facebook-f"></i
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                        <div class="footer_widegts">
+                            <div class="footer_logo">
+                                <img src="assets/images/logo/logo.png" />
+                            </div>
+                            <div class="social">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/sonu.kushwah.1238292" target="_blank" class="main_div"><i class="fa-brands fa-facebook-f"></i
                                     ></a>
-                              </li>
-                              <li>
-                                 <a
-                                    href="https://www.instagram.com/sonukushwah_/" target="_blank"
-                                    class="main_div"
-                                    ><i class="fa-brands fa-instagram"></i
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/sonukushwah_/" target="_blank" class="main_div"><i class="fa-brands fa-instagram"></i
                                     ></a>
-                              </li>
-                              <li>
-                                 <a
-                                    href="https://www.linkedin.com/in/sonu-kushwah-636935171/" target="_blank"
-                                    class="main_div"
-                                    ><i class="fa-brands fa-linkedin-in"></i
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/sonu-kushwah-636935171/" target="_blank" class="main_div"><i class="fa-brands fa-linkedin-in"></i
                                     ></a>
-                              </li>
-                              <li>
-                                 <a href="live:.cid.d913f7e55790a209" target="_blank" class="main_div"
-                                    ><i class="fa-brands fa-skype"></i
+                                    </li>
+                                    <li>
+                                        <a href="live:.cid.d913f7e55790a209" target="_blank" class="main_div"><i class="fa-brands fa-skype"></i
                                     ></a>
-                              </li>
-                           </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                     <div class="footer_widegts">
-                        <h5>quick links</h5>
-                        <div class="footer_list">
-                           <ul>
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">porfolio</a></li>
-                              <li><a href="#">service</a></li>
-                              <li><a href="#">contact</a></li>
-                           </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                        <div class="footer_widegts">
+                            <h5>quick links</h5>
+                            <div class="footer_list">
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">porfolio</a></li>
+                                    <li><a href="#">service</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                     <div class="footer_widegts">
-                        <h5>Recent Project</h5>
-                        <div class="footer_list">
-                           <ul>
-                              <li><a href="https://www.sevenopal.com/">Sevenopal</a></li>
-                              <li><a href="http://137.184.57.201/">Bookforvisa</a></li>
-                              <li><a href="https://genesis.digimonk.site/">Gensis</a></li>
-                              <li><a href="https://dummyflights.com/">Dummyflight</a></li>
-                              <li><a href="https://www.koorjobs.com/">Koor</a></li>
-                           </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                        <div class="footer_widegts">
+                            <h5>Recent Project</h5>
+                            <div class="footer_list">
+                                <ul>
+                                    <li><a href="https://www.sevenopal.com/">Sevenopal</a></li>
+                                    <li><a href="http://137.184.57.201/">Bookforvisa</a></li>
+                                    <li><a href="https://genesis.digimonk.site/">Gensis</a></li>
+                                    <li><a href="https://dummyflights.com/">Dummyflight</a></li>
+                                    <li><a href="https://www.koorjobs.com/">Koor</a></li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                     <div class="footer_widegts">
-                        <h5>Service</h5>
-                        <div class="footer_list">
-                           <ul>
-                              <li><a href="#feature">Website Design</a></li>
-                              <li><a href="#feature">PDF Template Design</a></li>
-                              <li><a href="#feature">Email Template Design</a></li>
-                              <li><a href="#feature">React Website Design</a></li>
-                              <li><a href="#feature">Redesign Webiste</a></li>
-                           </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                        <div class="footer_widegts">
+                            <h5>Service</h5>
+                            <div class="footer_list">
+                                <ul>
+                                    <li><a href="#feature">Website Design</a></li>
+                                    <li><a href="#feature">PDF Template Design</a></li>
+                                    <li><a href="#feature">Email Template Design</a></li>
+                                    <li><a href="#feature">React Website Design</a></li>
+                                    <li><a href="#feature">Redesign Webiste</a></li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="bottom_footer text-center">
+        </div>
+        <div class="bottom_footer text-center">
             <p>
-              © 2024 | All rights reserved by
-              Sonu Kushwah
+                © 2024 | All rights reserved by Sonu Kushwah
             </p>
-         </div>
-         <!--wattsap-->
-         <button class="wattsp" onclick="openWhatsApp()">
+        </div>
+        <!--wattsap-->
+        <button class="wattsp" onclick="openWhatsApp()">
             <img src="assets/images/wattsp.png">
-         </button>
-         <!--wattap-->
-         <!--top to bottom-->
-         <div class="top_bottom"  >
-            <a href="#" onclick="topFunction()" id="myBtn" class="main_div"
-               ><i class="fa-solid fa-arrow-up"></i
+        </button>
+        <!--wattap-->
+        <!--top to bottom-->
+        <div class="top_bottom">
+            <a href="#" onclick="topFunction()" id="myBtn" class="main_div"><i class="fa-solid fa-arrow-up"></i
                ></a>
-         </div>
-         <!--top to bottom //-->
-      </footer>
-      <!--footer //-->
-      <script src="assets/js/jquery-3.6.3.min.js"></script>
-      <script src="assets/js/slick.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/main.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        </div>
+        <!--top to bottom //-->
+    </footer>
+    <!--footer //-->
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-      mirror: false
-      });
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: false,
+          mirror: false
+          });
     </script>
-      <script>
-         var typing = new Typed(".text", {
+    <script>
+        var typing = new Typed(".text", {
            strings: [
              "",
              "Front End Devloper",
@@ -1124,23 +1014,23 @@
            backSpeed: 40,
            loop: true,
          });
-      </script>
-      <script src="assets/js/main.js"></script>
-      <script>
-         /*service slider*/
-       
-      </script>
-      <script>
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        /*service slider*/
+    </script>
+    <script>
         /*html theme customize varible css*/
         const setTheme = theme => document.documentElement.className = theme;
-      </script>
-     <script>
-      function openWhatsApp() {
-          // Replace the phone number with your own number
-          var phoneNumber = "838957395"; // Example: 1234567890
-          var url = `https://wa.me/${phoneNumber}`;
-          window.open(url, '_blank');
-      }
-  </script>
-   </body>
+    </script>
+    <script>
+        function openWhatsApp() {
+              // Replace the phone number with your own number
+              var phoneNumber = "838957395"; // Example: 1234567890
+              var url = `https://wa.me/${phoneNumber}`;
+              window.open(url, '_blank');
+          }
+    </script>
+</body>
+
 </html>
